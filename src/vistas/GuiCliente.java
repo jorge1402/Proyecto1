@@ -2,6 +2,7 @@
 package vistas;
 
 import controlador.Registrador;
+import controlador.Verificador;
 import javax.swing.JOptionPane;
 import modelo.Cliente;
 
@@ -153,10 +154,12 @@ public class GuiCliente extends javax.swing.JFrame {
     private void jbtnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRegistrarActionPerformed
         // TODO add your handling code here:
         Registrador registrador = new Registrador();
+        Verificador verificador = new Verificador();
         try{            
             Cliente  persona = new Cliente(jtxtDni.getText(),
                     jtxtApellidos.getText(),
                     jtxtNombres.getText());
+            verificador.verificarCliente(persona);
             registrador.registrarCliente(persona);
             JOptionPane.showMessageDialog(this, "Cliente registrado exitosamente");
         }
