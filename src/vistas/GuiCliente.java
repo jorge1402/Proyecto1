@@ -34,7 +34,7 @@ public class GuiCliente extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jbtnRegistrar = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        modifica = new javax.swing.JButton();
 
         jLabel1.setText("DNI");
 
@@ -97,7 +97,7 @@ public class GuiCliente extends javax.swing.JFrame {
 
         jButton2.setText("Eliminar");
 
-        jButton3.setText("Modificar");
+        modifica.setText("Modificar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -109,7 +109,7 @@ public class GuiCliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(modifica)
                 .addContainerGap(54, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -119,7 +119,7 @@ public class GuiCliente extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtnRegistrar)
                     .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(modifica))
                 .addContainerGap())
         );
 
@@ -171,7 +171,6 @@ public class GuiCliente extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -181,5 +180,6 @@ public class GuiCliente extends javax.swing.JFrame {
     private javax.swing.JTextField jtxtApellidos;
     private javax.swing.JTextField jtxtDni;
     private javax.swing.JTextField jtxtNombres;
+    private javax.swing.JButton modifica;
     // End of variables declaration//GEN-END:variables
 }
